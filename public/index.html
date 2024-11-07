@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Patito Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Agregar/Editar Patito</h1>
+    <div id="addPatitoForm">
+        <label for="color">Color:</label>
+        <select id="color" required>
+            <option value="">Seleccione un color</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Negro">Negro</option>
+        </select>
+
+        <label for="tamano">Tamaño:</label>
+        <select id="tamano" required>
+            <option value="">Seleccione un tamaño</option>
+            <option value="XSmall">XSmall</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="XLarge">XLarge</option>
+        </select>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" placeholder="Precio" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" placeholder="Cantidad" required>
+
+        <button id="actionButton" onclick="addPatito()">Agregar</button>
+    </div>
+
+    <h1>Lista de Patitos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Color</th>
+                <th>Tamaño</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Los datos de los patitos se agregarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
